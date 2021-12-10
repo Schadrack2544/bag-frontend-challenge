@@ -64,12 +64,12 @@ function dashboard() {
                     </div>
                     {/* body where flags will be shown */}
                     <div className="flex items-center justify-between">
-                        <h1 className="text-center">hagiye gushya! Reka dutwike twimanukire</h1>
+                      
                         {   
                         
                             fetch('https://restcountries.com/v3.1/all')
                             .then(response=>response.json())
-                            .then(data=> console.log(data[100]))
+                            .then(data=> countries=data)
                             .catch(error=>console.log(error))
                             
                          } 
